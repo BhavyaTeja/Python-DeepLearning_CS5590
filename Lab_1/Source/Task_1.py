@@ -6,7 +6,7 @@ WordCount = {}
 
 # Opening the file in read-write mode
 
-with open('TextFile.txt', 'r+') as txtfile:
+with open('../TextFile.txt', 'r+') as txtfile:
     for line in txtfile:                                            # Splitting the file into lines
         for word in line.split():                                   # Splitting the lines into words
             if word not in WordCount:                               # Condition to check if the word is present or not
