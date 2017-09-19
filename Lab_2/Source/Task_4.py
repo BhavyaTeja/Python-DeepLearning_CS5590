@@ -1,9 +1,11 @@
+
+
 import numpy as np
 
-vector = np.random.rand(1, 15)
+vector = np.random.rand(15)
 
 print(vector)
 
-n = vector.max()
+vector[vector.argmax()] = 100
 
-vector[n] = 100
+print(vector)
