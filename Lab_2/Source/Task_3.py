@@ -13,6 +13,13 @@ class Student:
         print('The full name is ', self.full_name)
         print('The roll number is ', self.rollno)
 
+
+class TransferStudent(Student):
+
+    def __init__(self):
+        super(TransferStudent, self).__init__()
+        self.TransferredCredits = input('Enter the number of credits that are transferred')
+
 class System:
 
     def __init__(self):
@@ -22,25 +29,20 @@ class System:
         print('The system the student enrolled is: ', self.TypeOfSystem)
 
 
-class TransferStudent(Student):
-
-    def __init__(self, s):
-        super(TransferStudent, self).__init__()
-        self.TransferredCredits = s
-
 class Grades(TransferStudent):
 
-    def __init__(self, s, grade, credits):
-        TransferStudent.__init__(self, s)
+    def __init__(self, grade, credits):
+        TransferStudent.__init__(self)
         self.Grades = grade
         self.EnrolledCredits = credits
 
     def TotalCredits(self):
         self.TotalCreditsEnrolled = self.TransferredCredits + credits
+        print('The total number of credits completed: ', self.TotalCreditsEnrolled)
 
     def display(self):
-        print('The full name is ', self.full_name)
-        print('The roll number is ', self.rollno)
+        print('The name of the student is ', self.full_name)
+        print('The roll number of the student is ', self.rollno)
         print('The Transferred credits are: ', self.TransferredCredits)
         print('The total number of credits enrolled: ', self.EnrolledCredits)
         print('The Grade obtained: ', self.Grades)
@@ -55,20 +57,19 @@ class Attendance:
 
 
 Student1 = Student()
+Student2 = Student()
+#Student3 = Student()
+
+Student4 = TransferStudent()
+#Student5 = TransferStudent()
+
+#Student6 = Grades("A+", "15")
+Student7 = Grades("A", "5")
+
+Student7.display()
+
+#Student5.display()
+
+Student7.count()
 Student1.display()
 
-"""
-#Student2 = Student("Bhavya", "31")
-#Student3 = Student("Prabha", "14")
-
-Student1.display()
-
-#Student4 = TransferStudent("Loke", "45", "5")
-
-Student5 = Grades("Girish", "33", "0", "A+", "15")
-
-Student5.display()
-
-Student5.count()
-
-"""
