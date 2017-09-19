@@ -25,7 +25,7 @@ class Student:  # Class #1
         self.rollno = input('Enter the roll number')
         Student.overall_total += 1
 
-    def count(self):
+    def count(self):    # Defining a function inside a class
         print('The number of students enrolled are ', Student.overall_total)
 
     def display(self):
@@ -52,7 +52,7 @@ class System:  # Class #3
 class Grades(TransferStudent):  # Class #4
 
     def __init__(self, grade, credits):
-        TransferStudent.__init__(self)
+        TransferStudent.__init__(self)  # Another way of inheriting the parent class
         self.Grades = grade
         self.EnrolledCredits = credits
 
@@ -75,6 +75,8 @@ class Attendance:  # Class #5
         if self.__attendance < 65:
             print("Student's attendance is low")
 
+
+# Creating the instances of all the classes
 
 Student1 = Student()
 Student2 = Student()
