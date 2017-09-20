@@ -20,5 +20,7 @@ for k in range(1,num+1):
 
 # Printing the whole dictionary
 
+print('Dictionary with (k, k*k) is ')
+
 print(dictionary)
 

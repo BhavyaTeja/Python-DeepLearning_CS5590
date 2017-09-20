@@ -20,6 +20,6 @@ vector[vector.argmax()] = 100
 
 # Printing the new vector
 
-print('The Vector after replacing the maximum value with 100 \n ')
+print('\nThe Vector after replacing the maximum value with 100 \n ')
 
 print(vector)
