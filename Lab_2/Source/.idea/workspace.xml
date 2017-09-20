@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Source$Task_1.coverage" NAME="Task_1 Coverage Results" MODIFIED="1505534726322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Source$Task_1.coverage" NAME="Task_1 Coverage Results" MODIFIED="1505876288696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Source$Task_3.coverage" NAME="Task_3 Coverage Results" MODIFIED="1505857609531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Source$Task_2.coverage" NAME="Task_2 Coverage Results" MODIFIED="1505536946661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Source$Task_4.coverage" NAME="Task_4 Coverage Results" MODIFIED="1505789322286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -21,17 +21,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Task_1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task_1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="75">
+              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task_2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Task_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task_2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -73,10 +73,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Task_1.py" />
         <option value="$PROJECT_DIR$/Task_3.py" />
         <option value="$PROJECT_DIR$/Task_4.py" />
         <option value="$PROJECT_DIR$/Task_2.py" />
+        <option value="$PROJECT_DIR$/Task_1.py" />
       </list>
     </option>
   </component>
@@ -130,7 +130,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.Task_3">
+  <component name="RunManager" selected="Python.Task_1">
     <configuration default="false" name="Task_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -425,10 +425,10 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Task_3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Task_4" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Task_2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Task_1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Task_1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Task_3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Task_4" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Task_2" />
       </list>
     </recent_temporary>
   </component>
@@ -575,18 +575,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
