@@ -45,5 +45,5 @@ y_predRBF = RBFclassifier.predict(X_test)
 # Calculating the Accuracy of the Model
 
 from sklearn.metrics import accuracy_score
-accuracy_score(y_test,y_predLinear)
-accuracy_score(y_test,y_predRBF)
+print('The Accuracy score of the Linear Kernel SVM Classification is ', accuracy_score(y_test,y_predLinear))
+print('The Accuracy score of the RBF Kernel SVM Classification is ', accuracy_score(y_test,y_predRBF))
