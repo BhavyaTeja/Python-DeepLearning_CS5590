@@ -11,6 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Lab_3$SVMclassification.coverage" NAME="SVMclassification Coverage Results" MODIFIED="1507664459887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task3/Source" />
+    <SUITE FILE_PATH="coverage/Lab_3$NaturalLanguageProcessing.coverage" NAME="NaturalLanguageProcessing Coverage Results" MODIFIED="1507664776193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task4/Source" />
     <SUITE FILE_PATH="coverage/Lab_3$LinearRegression.coverage" NAME="LinearRegression Coverage Results" MODIFIED="1507663676556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task1/Source" />
     <SUITE FILE_PATH="coverage/Lab_3$KMeansClustering.coverage" NAME="KMeansClustering Coverage Results" MODIFIED="1507663847818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task2/Source" />
   </component>
@@ -40,12 +41,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SVMclassification.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SVMclassification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task3/Source/SVMclassification.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
               <caret line="48" column="66" lean-forward="false" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaturalLanguageProcessing.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task4/Source/NaturalLanguageProcessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+              <folding>
+                <element signature="e#27#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +71,7 @@
         <option value="$PROJECT_DIR$/Task1/Source/LinearRegression.py" />
         <option value="$PROJECT_DIR$/Task2/Source/KMeansClustering.py" />
         <option value="$PROJECT_DIR$/Task3/Source/SVMclassification.py" />
+        <option value="$PROJECT_DIR$/Task4/Source/NaturalLanguageProcessing.py" />
       </list>
     </option>
   </component>
@@ -99,6 +113,28 @@
               <option name="myItemId" value="Lab_3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -115,6 +151,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -195,7 +245,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SVMclassification">
+  <component name="RunManager" selected="Python.NaturalLanguageProcessing">
     <configuration default="false" name="LinearRegression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,6 +296,24 @@
       <module name="Lab_3" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Task3/Source/SVMclassification.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NaturalLanguageProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Task4/Source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Lab_3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Task4/Source/NaturalLanguageProcessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -458,16 +526,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.LinearRegression" />
       <item index="1" class="java.lang.String" itemvalue="Python.KMeansClustering" />
       <item index="2" class="java.lang.String" itemvalue="Python.SVMclassification" />
+      <item index="3" class="java.lang.String" itemvalue="Python.NaturalLanguageProcessing" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.SVMclassification" />
-        <item index="1" class="java.lang.String" itemvalue="Python.KMeansClustering" />
-        <item index="2" class="java.lang.String" itemvalue="Python.LinearRegression" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.NaturalLanguageProcessing" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SVMclassification" />
+        <item index="2" class="java.lang.String" itemvalue="Python.KMeansClustering" />
+        <item index="3" class="java.lang.String" itemvalue="Python.LinearRegression" />
       </list>
     </recent_temporary>
   </component>
@@ -540,6 +610,16 @@
         <state relative-caret-position="424">
           <caret line="48" column="66" lean-forward="false" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task4/Source/NaturalLanguageProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+          <folding>
+            <element signature="e#27#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

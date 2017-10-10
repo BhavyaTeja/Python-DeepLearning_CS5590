@@ -9,7 +9,7 @@ import sys
 # Reading the Text file
 
 
-with open('/Users/bhavyateja/Github_Projects/Python-DeepLearning_CS5590/Lab_3/Task4/Text/TextFile.txt', 'r') as myfile:
+with open('/Users/bhavyateja/Github_Projects/Python-DeepLearning_CS5590/Lab_3/Task4/Documentation/TextFile.txt', 'r') as myfile:
     File = myfile.read().replace('\n', '')
 
 
