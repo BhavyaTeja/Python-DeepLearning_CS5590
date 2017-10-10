@@ -15,7 +15,7 @@ import pandas as pd
 
 # Importing the dataset
 
-dataset = pd.read_csv('../Dataset/Customers.csv')
+dataset = pd.read_csv('../Documentation/Customers.csv')
 X = dataset.iloc[:, [3, 4]].values
 
 # Fitting K-Means to the dataset
