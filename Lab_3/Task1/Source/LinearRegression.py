@@ -16,7 +16,7 @@ import pandas as pd
 
 # Importing the dataset
 
-dataset = pd.read_csv('../Dataset/Movie_dataset.csv')
+dataset = pd.read_csv('../Documentation/Movie_dataset.csv')
 dataset['Gross'] = dataset['Domestic Gross($M)'] + dataset['Worldwide Gross($M)']
 X = dataset.iloc[:, 5].values
 y = dataset.iloc[:,7].values
