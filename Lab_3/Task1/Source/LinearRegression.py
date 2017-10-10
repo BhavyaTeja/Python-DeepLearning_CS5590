@@ -51,7 +51,7 @@ plt.show()
 # Visualising the Test set results
 
 plt.scatter(X_test, y_test, color = 'red')
-plt.plot(X_train, regressor.predict(X_train), color = 'blue')
+plt.plot(X_test, regressor.predict(X_test), color = 'blue')
 plt.title('Movie Budget vs Gross Income (Test set)')
 plt.xlabel('Move Budget ($M)')
 plt.ylabel('Gross Income ($M)')

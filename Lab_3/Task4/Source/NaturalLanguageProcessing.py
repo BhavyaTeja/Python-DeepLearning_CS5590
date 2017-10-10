@@ -14,9 +14,7 @@ with open('/Users/bhavyateja/Github_Projects/Python-DeepLearning_CS5590/Lab_3/Ta
 
 
 def tokens(text):
-    """
-    Get all words from the corpus
-    """
+    # Get all words from the corpus
     return re.findall('[a-z]+', text.lower())
 
 Words = tokens(File)
@@ -26,11 +24,11 @@ Words = tokens(File)
 File = File.decode('utf-8')
 Sentences = sent_tokenize(File)
 
-print '\nThe Sentences in the File are: \n',Sentences
+print '\nThe Sentences in the File are: \n', Sentences
 
 WordsInSentences = [word_tokenize(sent) for sent in Sentences]
 
-print '\nThe Words in the Sentences are: \n' ,WordsInSentences
+print '\nThe Words in the Sentences are: \n', WordsInSentences
 
 # Implementation of the Lemmatization
 
@@ -50,9 +48,9 @@ WordCount = collections.Counter(WordsNoV)
 
 Top5Words = WordCount.most_common(5)
 
-TopWords = [word for (word,freq) in Top5Words]
+TopWords = [word for (word, freq) in Top5Words]
 
-print '\nThe Top 5 Words with high frequency of occurence: \n',str(TopWords)
+print '\nThe Top 5 Words with high frequency of occurrence: \n', str(TopWords)
 
 # Sentences with the Top5Words
 
@@ -64,7 +62,7 @@ for s in Sentences:
             TopSentences.append(s)
             break
 
-print '\nThe Sentences with most frequently occured words:\n', TopSentences
+print '\nThe Sentences with most frequently occurred words:\n', TopSentences
 
 # Concatenating the Sentences & Summarization of the Text
 
