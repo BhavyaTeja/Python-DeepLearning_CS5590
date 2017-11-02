@@ -1,13 +1,4 @@
-# Logistic Regression
-# ----------------------------------
-#
-# This function shows how to use TensorFlow to
-# solve logistic regression.
-# y = sigmoid(Ax + b)
-#
-# We will use the low birth weight data, specifically:
-#  y = 0 or 1 = low birth weight
-#  x = demographic and medical history data
+#Importing the libraries
 
 import matplotlib.pyplot as plt
 import numpy as np
