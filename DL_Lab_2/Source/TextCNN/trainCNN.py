@@ -15,7 +15,7 @@ logging.getLogger().setLevel(logging.INFO)
 def train_cnn():
 	"""Step 0: load sentences, labels, and training parameters"""
 	#train_file = sys.argv[1]
-	input_file = '/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/consumer_complaints.csv.zip'
+	input_file = '/Users/bhavyateja/Github_Projects/Python-DeepLearning_CS5590/DL_Lab_2/Source/TextCNN/consumer_complaints.csv.zip'
 	x_raw, y_raw, df, labels = dataHelpers.load_data_and_labels(input_file)
 
 	#parameter_file = sys.argv[0]
