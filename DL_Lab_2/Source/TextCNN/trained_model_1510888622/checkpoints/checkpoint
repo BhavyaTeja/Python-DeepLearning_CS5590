@@ -1,0 +1,6 @@
+model_checkpoint_path: "/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/trained_model_1510888622/checkpoints/model-800"
+all_model_checkpoint_paths: "/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/trained_model_1510888622/checkpoints/model-400"
+all_model_checkpoint_paths: "/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/trained_model_1510888622/checkpoints/model-500"
+all_model_checkpoint_paths: "/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/trained_model_1510888622/checkpoints/model-600"
+all_model_checkpoint_paths: "/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/trained_model_1510888622/checkpoints/model-700"
+all_model_checkpoint_paths: "/Users/bhavyateja/Masters/PythonDeepLearning/DL_4/New folder/trained_model_1510888622/checkpoints/model-800"
