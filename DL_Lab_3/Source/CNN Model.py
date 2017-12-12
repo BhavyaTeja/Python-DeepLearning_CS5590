@@ -1,47 +1,71 @@
-# LSTM for sequence classification in the IMDB dataset
+from __future__ import print_function
 
-import numpy
-from keras.datasets import imdb
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Convolution2D
-from keras.layers.embeddings import Embedding
 from keras.preprocessing import sequence
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.layers import Embedding
+from keras.layers import LSTM
+from keras.layers import Conv1D, MaxPooling1D
+from keras.datasets import imdb
 
-# fix random seed for reproducibility
-numpy.random.seed(7)
+# Embedding
+max_features = 20000
+maxlen = 100
+embedding_size = 128
 
-# load the dataset but only keep the top n words, zero the rest
+# Convolution
+kernel_size = 5
+filters = 64
+pool_size = 4
 
-top_words = 5000
+# LSTM
+lstm_output_size = 70
 
-(X_train, Y_train), (X_test, Y_test) = imdb.load_data(path="imdb.npz",
-                                                      num_words=top_words,
-                                                      skip_top=0,
-                                                      maxlen=None,
-                                                      seed=113,
-                                                      start_char=1,
-                                                      oov_char=2,
-                                                      index_from=3)
+# Training
+batch_size = 30
+epochs = 2
 
-# truncate and pad input sequences
+'''
+Note:
+batch_size is highly sensitive.
+Only 2 epochs are needed as the dataset is very small.
+'''
 
-max_review_length = 500
-X_train = sequence.pad_sequences(X_train, maxlen=max_review_length)
-X_test = sequence.pad_sequences(X_test, maxlen=max_review_length)
+print('Loading data...')
+(x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=max_features)
+print(len(x_train), 'train sequences')
+print(len(x_test), 'test sequences')
 
-# create the model
+print('Pad sequences (samples x time)')
+x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
+x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
+print('x_train shape:', x_train.shape)
+print('x_test shape:', x_test.shape)
 
-embedding_vecor_length = 32
+print('Build model...')
+
 model = Sequential()
-model.add(Embedding(top_words, embedding_vecor_length, input_length=max_review_length))
-model.add(Convolution2D(100))
-model.add(Dense(1, activation='sigmoid'))
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-print(model.summary())
-model.fit(X_train, Y_train, nb_epoch=3, batch_size=64)
+model.add(Embedding(max_features, embedding_size, input_length=maxlen))
+model.add(Dropout(0.25))
+model.add(Conv1D(filters,
+                 kernel_size,
+                 padding='valid',
+                 activation='relu',
+                 strides=1))
+model.add(MaxPooling1D(pool_size=pool_size))
+model.add(LSTM(lstm_output_size))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
 
-# Final evaluation of the model
+model.compile(loss='binary_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
 
-scores = model.evaluate(X_test, Y_test, verbose=0)
-print("Accuracy: %.2f%%" % (scores[1]*100))
+print('Train...')
+model.fit(x_train, y_train,
+          batch_size=batch_size,
+          epochs=epochs,
+          validation_data=(x_test, y_test))
+score, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
+print('Test score:', score)
+print('Test accuracy:', acc)
